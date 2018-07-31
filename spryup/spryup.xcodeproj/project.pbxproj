@@ -12,6 +12,9 @@
 		5020383E210EA4CF003690D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5020383C210EA4CF003690D0 /* Main.storyboard */; };
 		50203840210EA4D0003690D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5020383F210EA4D0003690D0 /* Assets.xcassets */; };
 		50203843210EA4D0003690D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50203841210EA4D0003690D0 /* LaunchScreen.storyboard */; };
+		5020384B210EA768003690D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5020384A210EA768003690D0 /* GoogleService-Info.plist */; };
+		5020384D21101DA0003690D0 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020384C21101DA0003690D0 /* logInViewController.swift */; };
+		DDE108EE1C83741A70C5C46C /* Pods_spryup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69397087627AECB7B2A37711 /* Pods_spryup.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		5020383F210EA4D0003690D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50203842210EA4D0003690D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50203844210EA4D0003690D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5020384A210EA768003690D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5020384C21101DA0003690D0 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
+		69397087627AECB7B2A37711 /* Pods_spryup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spryup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C76E82F9A99AF533CD84470 /* Pods-spryup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spryup.release.xcconfig"; path = "Pods/Target Support Files/Pods-spryup/Pods-spryup.release.xcconfig"; sourceTree = "<group>"; };
+		D364C66B41451E0D1DC1046B /* Pods-spryup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spryup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spryup/Pods-spryup.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE108EE1C83741A70C5C46C /* Pods_spryup.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2188EB2BAF5E093F468442C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69397087627AECB7B2A37711 /* Pods_spryup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C3B634398E0BDD7B9BA45BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D364C66B41451E0D1DC1046B /* Pods-spryup.debug.xcconfig */,
+				7C76E82F9A99AF533CD84470 /* Pods-spryup.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5020382C210EA4CF003690D0 = {
 			isa = PBXGroup;
 			children = (
 				50203837210EA4CF003690D0 /* spryup */,
 				50203836210EA4CF003690D0 /* Products */,
+				3C3B634398E0BDD7B9BA45BB /* Pods */,
+				2188EB2BAF5E093F468442C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				5020383F210EA4D0003690D0 /* Assets.xcassets */,
 				50203841210EA4D0003690D0 /* LaunchScreen.storyboard */,
 				50203844210EA4D0003690D0 /* Info.plist */,
+				5020384A210EA768003690D0 /* GoogleService-Info.plist */,
+				5020384C21101DA0003690D0 /* logInViewController.swift */,
 			);
 			path = spryup;
 			sourceTree = "<group>";
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50203847210EA4D0003690D0 /* Build configuration list for PBXNativeTarget "spryup" */;
 			buildPhases = (
+				551DFC260799C5A3E316E9D3 /* [CP] Check Pods Manifest.lock */,
 				50203831210EA4CF003690D0 /* Sources */,
 				50203832210EA4CF003690D0 /* Frameworks */,
 				50203833210EA4CF003690D0 /* Resources */,
+				0F2FF9998CF07886C93F5B37 /* [CP] Embed Pods Frameworks */,
+				E0AB9178E78CA72010F0D234 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50203843210EA4D0003690D0 /* LaunchScreen.storyboard in Resources */,
+				5020384B210EA768003690D0 /* GoogleService-Info.plist in Resources */,
 				50203840210EA4D0003690D0 /* Assets.xcassets in Resources */,
 				5020383E210EA4CF003690D0 /* Main.storyboard in Resources */,
 			);
@@ -130,12 +164,116 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F2FF9998CF07886C93F5B37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-spryup/Pods-spryup-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spryup/Pods-spryup-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		551DFC260799C5A3E316E9D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-spryup-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0AB9178E78CA72010F0D234 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-spryup/Pods-spryup-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-spryup/Pods-spryup-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50203831210EA4CF003690D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5020383B210EA4CF003690D0 /* ViewController.swift in Sources */,
+				5020384D21101DA0003690D0 /* logInViewController.swift in Sources */,
 				50203839210EA4CF003690D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +416,7 @@
 		};
 		50203848210EA4D0003690D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D364C66B41451E0D1DC1046B /* Pods-spryup.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +435,7 @@
 		};
 		50203849210EA4D0003690D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C76E82F9A99AF533CD84470 /* Pods-spryup.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
