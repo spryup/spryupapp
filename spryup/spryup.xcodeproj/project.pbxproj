@@ -14,6 +14,7 @@
 		50203843210EA4D0003690D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50203841210EA4D0003690D0 /* LaunchScreen.storyboard */; };
 		5020384B210EA768003690D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5020384A210EA768003690D0 /* GoogleService-Info.plist */; };
 		5020384D21101DA0003690D0 /* logInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5020384C21101DA0003690D0 /* logInViewController.swift */; };
+		50B2031A2111620300B7497F /* landingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B203192111620300B7497F /* landingViewController.swift */; };
 		DDE108EE1C83741A70C5C46C /* Pods_spryup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69397087627AECB7B2A37711 /* Pods_spryup.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		50203844210EA4D0003690D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5020384A210EA768003690D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5020384C21101DA0003690D0 /* logInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logInViewController.swift; sourceTree = "<group>"; };
+		50B203192111620300B7497F /* landingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingViewController.swift; sourceTree = "<group>"; };
 		69397087627AECB7B2A37711 /* Pods_spryup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spryup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C76E82F9A99AF533CD84470 /* Pods-spryup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spryup.release.xcconfig"; path = "Pods/Target Support Files/Pods-spryup/Pods-spryup.release.xcconfig"; sourceTree = "<group>"; };
 		D364C66B41451E0D1DC1046B /* Pods-spryup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-spryup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-spryup/Pods-spryup.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				50203844210EA4D0003690D0 /* Info.plist */,
 				5020384A210EA768003690D0 /* GoogleService-Info.plist */,
 				5020384C21101DA0003690D0 /* logInViewController.swift */,
+				50B203192111620300B7497F /* landingViewController.swift */,
 			);
 			path = spryup;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				5020383B210EA4CF003690D0 /* ViewController.swift in Sources */,
 				5020384D21101DA0003690D0 /* logInViewController.swift in Sources */,
+				50B2031A2111620300B7497F /* landingViewController.swift in Sources */,
 				50203839210EA4CF003690D0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
